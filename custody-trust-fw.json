@@ -1,0 +1,27 @@
+{
+  "@context": "",
+  "name": "custodytfw",
+  "version": "1.0",
+  "description": "Custody Schema for Courts"
+  "data_uri": "https://github.com/yusufdundar/2020-MScThesis/guardianship-trust-fw.json",
+  "topics": ["Custody"],
+  "jurisdictions": ["tr", "eu"],
+  "geos": ["T"]
+  "roles": ["accreditor", "school", "graduate", "anyone"],
+  "privileges": [
+        {"name": "accredit", "uri": "http://kmk.org/tf/accredit"},
+        {"name": "issue-edu", "uri": "http://kmk.org/tf/issue-edu"},
+        {"name": "hold-edu", "uri": "http://kmk.org/tf/hold-edu"},
+        {"name": "request-proof", "uri", "http://kmk.org/tf/request-proof"
+    ],
+    "duties": [
+        {"name": "safe-accredit", "uri": "http://kmk.org/tf/responsible-accredit"},
+        {"name": "GDPR-dat-control", "uri": "http://europa.eu/gdpr/trust-fw/gdpr-data-controller"}
+        {"name": "GDPR-edu-verif", "uri": "http://kmk.org/tf/gdpr-verif"}
+        {"name": "accept-kmk-tos", "uri": "http://kmk.org/tf/tos"}
+    ],
+    "define": [
+        {"name": "KMK": "id": "did:example:abc123"},
+        {"name": "KMK": "id": "did:anotherexample:def456"},
+    ], 
+}
