@@ -17,7 +17,22 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 ### permissions 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit
+Defines guardian's permissions. Retrieves data as a string list. 
+It can be one of the following items.
+- routine-medical-care
+- do-not-resuscitate
+- school
+- necessaries
+- gender-identity
+- religious-observance
+- light-travel
+- extended-travel
+- unenroll
+- contracts
+- marriage-family-planning
+- delegate
+- successor
+- authorize
 ### firstName
 Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ### lastName
