@@ -11,6 +11,7 @@
   "trustFrameworkURI", 
   "auditURI", 
   "appealURI", 
+  "caseResult",
   "credentialSubject.holder.type", 
   "credentialSubject.holder.role", 
   "credentialSubject.holder.rationaleURI", 
