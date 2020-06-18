@@ -1,6 +1,6 @@
 {
   "@context": {
-    "@version": 1.1,
+    "@version": 1.0,
     "@protected": true,
 
     "Proxy.G/TR Custody Trust Framework/1.0/JointCustody":
@@ -13,9 +13,13 @@
       "@context": {
         "@version": 1.1,
         "@protected": true,
-
+        
+        "firstName": "cc:firstname",
+        "lastName": "cc:lastname",
         "role": "cc:role",
         "rationaleURI": "cc:rationaleuri",
+        "kinshipStatus": "cc:kinshipStatus",
+        "permissions": "cc:permissions",
         "constraints": "cc:constraints"
       }
     },
@@ -25,12 +29,9 @@
         "@version": 1.1,
         "@protected": true,
 
-        "permissions": "cc:permissions",
         "firstName": "cc:firstname",
         "lastName": "cc:lastname",
         "birthDate": "cc:birthdate",
-        "gender": "cc:gender",
-        "nativeLanguage": "cc:nativelanguage",
         "photo": "cc:photo",
         "iris": "cc:iris",
         "fingerprint": "cc:fingerprint"      
@@ -42,14 +43,30 @@
         "@version": 1.1,
         "@protected": true,
 
-         "boundaries": "cc:boundaries"
-         "pointOfOrigin": "cc:pointoforigin"
-         "radiusKM": "cc:radiuskm"
-         "jurisdictions": "cc:jurisdictions"
-         "trigger": "cc:trigger"
-         "circumstances": "cc:circumstances"
-         "startTime": "cc:starttime"
+         "boundaries": "cc:boundaries",
+         "pointOfOrigin": "cc:pointoforigin",
+         "radiusKM": "cc:radiuskm",
+         "jurisdictions": "cc:jurisdictions",
+         "trigger": "cc:trigger",
+         "circumstances": "cc:circumstances",
+         "startTime": "cc:starttime",
          "endTime": "cc:endtime"
+       },
+    "Permissions": {
+      "@id": "cc:permissions",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+
+         "routine-medical-care": "cc:todo",
+         "school": "cc:todo",
+         "necessaries": "cc:todo",
+         "light-travel": "cc:todo",
+         "extended-travel": "cc:todo",
+         "contracts": "cc:todo",
+         "delegate": "cc:todo",
+         "successor": "cc:todo",
+         "authorize": "cc:todo"
        }
     }
   }
