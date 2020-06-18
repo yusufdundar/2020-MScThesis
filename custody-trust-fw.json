@@ -1,27 +1,56 @@
 {
-  "@context": "",
-  "name": "custodytfw",
+  "@context": "https://github.com/yusufdundar/2020-MScThesis/blob/master/context.jsonld",
+  "name": "TR Custody Trust Framework",
   "version": "1.0",
-  "description": "Custody Schema for Courts"
-  "data_uri": "https://github.com/yusufdundar/2020-MScThesis/guardianship-trust-fw.json",
+  "author": "Ministry of Justice"
+  "description": "Custody Framework for Courts"
+  "docs_uri": "https://github.com/yusufdundar/2020-MScThesis/blob/master/custody-framework.md",
+  "data_uri": "https://github.com/yusufdundar/2020-MScThesis/custody-trust-fw.json",
   "topics": ["Custody"],
-  "jurisdictions": ["tr", "eu"],
-  "geos": ["T"]
-  "roles": ["accreditor", "school", "graduate", "anyone"],
-  "privileges": [
-        {"name": "accredit", "uri": "http://kmk.org/tf/accredit"},
-        {"name": "issue-edu", "uri": "http://kmk.org/tf/issue-edu"},
-        {"name": "hold-edu", "uri": "http://kmk.org/tf/hold-edu"},
-        {"name": "request-proof", "uri", "http://kmk.org/tf/request-proof"
+  "jurisdictions": ["tur"],
+  "geos": ["Turkey"]
+  "case_result": ["sole-custody", "split-custody", "divided-custody", "joint-custody"],
+  "identifying": [
+        {"Holder": [
+            "first-name", 
+            "last-name", 
+            "role": ["kinship", "ad-hoc", "legal_appointment"], 
+            "kinship-status": ["mother", "father", "grandmother", "grandfather", "uncle", "other"],
+            "rationalURI": ["kinship","court-order","enforced"]
+        ]},
+        {"Proxied": [
+            "first-name", 
+            "last-name", 
+            "birth-date", 
+            "photo",
+            "iris",
+            "fingerprint"
+        ]},
     ],
-    "duties": [
-        {"name": "safe-accredit", "uri": "http://kmk.org/tf/responsible-accredit"},
-        {"name": "GDPR-dat-control", "uri": "http://europa.eu/gdpr/trust-fw/gdpr-data-controller"}
-        {"name": "GDPR-edu-verif", "uri": "http://kmk.org/tf/gdpr-verif"}
-        {"name": "accept-kmk-tos", "uri": "http://kmk.org/tf/tos"}
+    "permissions": [
+      "routine-medical-care",
+      "school",
+      "necessaries",
+      "light-travel",
+      "extended-travel",
+      "contracts",
+      "delegate",
+      "successor",
+      "authorize"
+    ],
+    "constraints": [
+      "boundaries",
+      "pointOfOrigin",
+      "radiusKM",
+      "jurisdictions",
+      "trigger",
+      "circumstances",
+      "startTime",
+      "endTime"
     ],
     "define": [
-        {"name": "KMK": "id": "did:example:abc123"},
-        {"name": "KMK": "id": "did:anotherexample:def456"},
+        {"name": "MOJ": "id": "did:example:abc123"},
+        {"name": "TCG": "id": "did:anotherexample:def456"},
     ], 
+   "audit": {"uri": "https://www.adalet.gov.tr/audit"}
 }
