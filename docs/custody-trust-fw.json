@@ -1,0 +1,92 @@
+{
+  "@context": "https://github.com/yusufdundar/2020-MScThesis/blob/master/context.jsonld",
+  "name": "TR Custody Trust Framework",
+  "version": "1.0",
+  "author": "Ministry of Justice",
+  "description": "Custody Framework for Courts",
+  "docs_uri": "https://github.com/yusufdundar/2020-MScThesis/blob/master/custody-framework.md",
+  "data_uri": "https://github.com/yusufdundar/2020-MScThesis/custody-trust-fw.json",
+  "topics": [
+    "Custody"
+  ],
+  "jurisdictions": [
+    "tur"
+  ],
+  "geos": [
+    "Turkey"
+  ],
+  "case_result": [
+    "sole-custody",
+    "split-custody",
+    "divided-custody",
+    "joint-custody"
+  ],
+  "identifying": [
+    {
+      "Holder": [
+        "first-name",
+        "last-name",
+        "role", [
+          "kinship",
+          "ad-hoc",
+          "legal_appointment"
+        ],
+        "kinship-status", [
+          "mother",
+          "father",
+          "grandmother",
+          "grandfather",
+          "uncle",
+          "other"
+        ],
+        "rationalURI", [
+          "kinship",
+          "court-order",
+          "enforced"
+        ]
+      ]
+    },
+    {
+      "Proxied": [
+        "first-name",
+        "last-name",
+        "birth-date",
+        "photo",
+        "iris",
+        "fingerprint"
+      ]
+    }
+  ],
+  "permissions": [
+    "routine-medical-care",
+    "school",
+    "necessaries",
+    "light-travel",
+    "extended-travel",
+    "contracts",
+    "delegate",
+    "successor",
+    "authorize"
+  ],
+  "constraints": [
+    "boundaries",
+    "pointOfOrigin",
+    "radiusKM",
+    "jurisdictions",
+    "trigger",
+    "circumstances",
+    "startTime",
+    "endTime"
+  ],
+  "define": [
+    {
+      "name": "MOJ", "id": "did:example:abc123"
+    },
+    {
+      "name": "TCG", "id": "did:anotherexample:def456"
+    }
+  ],
+  "audit": {
+    "uri": "https://www.adalet.gov.tr/audit"
+  }
+}
